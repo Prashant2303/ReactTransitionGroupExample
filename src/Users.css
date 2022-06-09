@@ -1,0 +1,32 @@
+.user-enter {
+    opacity: 0;
+    max-height: 0px;
+    margin-bottom: 0px;
+}
+
+.user-enter-active {
+    opacity: 1;
+    max-height: initial;
+    margin-bottom: 10px;
+    transition: all 1000ms linear;
+}
+
+.user-exit {
+    opacity: 1;
+    max-height: initial;
+    margin-bottom: 10px;
+}
+
+.user-exit-active {
+    opacity: 0;
+    max-height: 0px;
+    margin-bottom: 0px;
+    transition: all 1000ms linear;
+}
+
+.test {
+    border: 1px solid green;
+    opacity: 1;
+    transform: scale(1);
+    height: 50px;
+}
