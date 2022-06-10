@@ -3,7 +3,7 @@ import styled from "styled-components";
 import TileGroup from "./TileGroup";
 import AddButton from "./AddButton";
 import { getFunName, getRandomReadTime, getArticleType } from "./helpers";
-import List from "./List";
+import UserList from "./UserList";
 
 const Container = styled.div`
   display: grid;
@@ -81,7 +81,7 @@ const App = () => {
   
   return (
     <Container>
-      <List />
+      <UserList />
       <StyledH1>Dirty Transition Group Example</StyledH1>
       <IntroText>
         Here is a test of the transition group and styled components, wrapped

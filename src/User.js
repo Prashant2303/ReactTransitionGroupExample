@@ -1,8 +1,9 @@
 import React from 'react';
+import './Users.css';
 
 export default function User({ user, del, inProp }) {
     return (
-        <div style={{ backgroundColor: 'lightblue', marginBottom: '10px', 'height':'40px', overflow: 'hidden' }}>
+        <div className='user'>
             {`${user.id} ${user.name} ${user.email}`}
             <button onClick={() => del(user.id)}>Delete</button>
         </div>

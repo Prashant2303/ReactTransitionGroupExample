@@ -1,23 +1,30 @@
-.user-enter {
+.user {
+    background-color: lightblue;
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.user-anim-enter {
     opacity: 0;
     max-height: 0px;
     margin-bottom: 0px;
 }
 
-.user-enter-active {
+.user-anim-enter-active {
     opacity: 1;
-    max-height: initial;
+    max-height: 40px;
     margin-bottom: 10px;
     transition: all 1000ms linear;
 }
 
-.user-exit {
+.user-anim-exit {
     opacity: 1;
-    max-height: initial;
+    max-height: 40px;
     margin-bottom: 10px;
 }
 
-.user-exit-active {
+.user-anim-exit-active {
     opacity: 0;
     max-height: 0px;
     margin-bottom: 0px;

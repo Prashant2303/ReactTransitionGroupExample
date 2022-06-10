@@ -3,7 +3,7 @@ import User from './User';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './Users.css';
 
-export default function List() {
+export default function UserList() {
     const [state, setState] = useState([]);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function List() {
     return (
         <TransitionGroup style={{ 'backgroundColor': 'white' }}>
             {state.map((user) => (
-                <CSSTransition key={user.id} timeout={1000} classNames="user">
+                <CSSTransition key={user.id} timeout={1000} classNames="user-anim">
                     <User key={user.id} user={user} del={deleteUser} inProp={true} />
                 </CSSTransition>
             ))}
